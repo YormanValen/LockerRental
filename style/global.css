@@ -1,0 +1,171 @@
+/* Golbal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  word-break: break-word;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --gray: #595959;
+  --verde: #239b43;
+  --rojo: #e4211b;
+  --naranja: #de7c04;
+  --morado: #c00353;
+  --marron: #5e2025;
+  --beige: #cdb27b;
+}
+
+body {
+  background: white;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  width: 100%;
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.25s;
+  font-size: 1vw;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1vw;
+  padding: 0.8vw 2vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 10%;
+}
+
+h1,
+h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 1;
+}
+
+label {
+}
+
+p {
+  font-size: 1vw;
+}
+
+li {
+}
+
+i {
+  font-size: 1vw;
+}
+
+@keyframes background_animation {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 400%;
+  }
+}
+
+@media (max-width: 996px) {
+  section {
+    padding: 20% 10%;
+  }
+  h1,
+  h2 {
+    font-size: 7vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  p,
+  ol,
+  ul {
+    font-size: 3.5vw;
+  }
+
+  i {
+    font-size: 6vw;
+  }
+
+  button {
+    padding: 3vw 8vw;
+    font-size: 3.5vw;
+  }
+
+  a {
+    font-size: 3.5vw;
+  }
+}
+
+/* header */
+header {
+}
+
+.header_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0vw 5vw;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.header_box .logo_ctn {
+  display: flex;
+  align-items: center;
+  width: 10vw;
+}
+
+.header_box .menu_navbar {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.header_box .menu_navbar a {
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 1.3vw;
+  padding: 1vw 2vw;
+  border-radius: 2vw;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.header_box .menu_navbar a:hover {
+  background-color: var(--marron);
+  color: white;
+}
+
